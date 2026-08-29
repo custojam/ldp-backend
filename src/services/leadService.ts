@@ -36,6 +36,7 @@ export async function submitLead(data: SubmitLeadData) {
         ipAddress: data.ipAddress,
         formId: form.id,
         formName: form.name,
+        distributionId: duplicateCheck.distributionId,
         status: 'duplicate',
       },
     });
